@@ -1,29 +1,24 @@
 # Documentation of Project 1
-
-
-
-## Web statck Implementation 
-
-### Step 1 Installing apache
-
-#### update a list of packages in package manager
+## Web stack Implementation 
+Step 1 Installing apache
+update a list of packages in package manager
 
 `sudo apt update`
 ![Sudo Update](./Images/sudo_apt_update.png)
 
-#### run apache2 package installation
+run apache2 package installation
 
 `sudo apt install apache2`
 ![install apache2](./Images/install apache2.png)
 
-#### Verify Apache2
+Verify Apache2
 
 `sudo systemctl status apache2`
 ![Verify apache2](./image/Verify apache2.png)
 [Apache webpage](http://3.91.233.98/)
 
 ## Step 2
-### Installing mysql
+Installing mysql
 
 `sudo apt install mysql-server`
 `sudo mysql`
@@ -32,14 +27,14 @@
 ![mysql verify](mysql verify page.png)
 
 ## step_3
-### installing php
 
 Step 3 Installing PHP.
+
 `sudo apt install php libapache2-mod-php php-mysql`
 `php -v`
 ![confirm php](./image/confirm php.png)
 
-## step_4
+
 
 Step 4 Creating a Virtual Host for your Website using Apache
 
@@ -51,6 +46,14 @@ Step 4 Creating a Virtual Host for your Website using Apache
 `sudo a2dissite 000-default`
 `sudo apache2ctl configtest`
 `sudo systemctl reload apache2`
-`code`
+![verify php](./image/browse php tested)
 
-![alt text](image.jpg)
+STEP 5 Enable PHP on the website
+
+ 	`sudo vim /etc/apache2/mods-enabled/dir.conf`
+      	`sudo systemctl reload apache2`
+           	`vim /var/www/projectlamp/index.php`
+               `sudo chown root:root index.php`
+                `sudo chmod 775 index.php`
+                	![php index](./image/php index server.png)
+                         [php version 8.1.2](http://3.91.233.98)
