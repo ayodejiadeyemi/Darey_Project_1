@@ -46,7 +46,7 @@ In linux use `sudo apt install php libapache2-mod-php php-mysql`
 
 In linux use `php -v`
 
-![confirm php](./images/confirm_php.png)
+![confirm php](./Images/confirm_php.png)
 
 ---
 
@@ -68,7 +68,7 @@ Step 4 Creating a Virtual Host for your Website using Apache
 
 `sudo systemctl reload apache2`
 
-![verify php](./images/browse_php_tested)
+![verify php](./Images/browse_php_tested)
 
 ---
 
@@ -84,6 +84,6 @@ STEP 5 Enable PHP on the website
 
 `sudo chmod 775 index.php`
 
-![php index](./image/php_index_server.png)
+![php index](./Image/php_index_server.png)
 
 [inline link](http://3.91.233.98)
