@@ -3,7 +3,7 @@
 Step 1 Installing apache.
 update a list of packages in package manager.
 
-`sudo apt update`
+In linux, use `sudo apt update` to update linux packages.
 ![Sudo Update](./Images/sudo_apt_update.png)
 
 run apache2 package installation.
@@ -15,7 +15,9 @@ Verify Apache2.
 
 `sudo systemctl status apache2`
 ![Verify apache2](./images/Verify_apache2.png)
-[Apache webpage](http://3.91.233.98/)
+[inline link](http://3.91.233.98/)
+
+---
 
 ## Step 2
 Installing mysql.
@@ -26,6 +28,8 @@ Installing mysql.
 `sudo mysql -p`
 ![mysql verify](./images/mysql_verify_page.png)
 
+---
+
 ## step_3
 
 Step 3 Installing PHP.
@@ -34,7 +38,7 @@ Step 3 Installing PHP.
 `php -v`
 ![confirm php](./images/confirm_php.png)
 
-
+---
 
 Step 4 Creating a Virtual Host for your Website using Apache
 
@@ -48,6 +52,8 @@ Step 4 Creating a Virtual Host for your Website using Apache
 `sudo systemctl reload apache2`
 ![verify php](./images/browse_php_tested)
 
+---
+
 STEP 5 Enable PHP on the website
 
 `sudo vim /etc/apache2/mods-enabled/dir.conf`
@@ -56,4 +62,4 @@ STEP 5 Enable PHP on the website
 `sudo chown root:root index.php`
 `sudo chmod 775 index.php`
 ![php index](./image/php_index_server.png)
-[php version 8.1.2](http://3.91.233.98)
+[inline link](http://3.91.233.98)
