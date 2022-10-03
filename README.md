@@ -68,7 +68,7 @@ Step 4 Creating a Virtual Host for your Website using Apache
 
 `sudo systemctl reload apache2`
 
-![verify php](./Images/browse_php_tested)
+![verify php](./Images/browse_php_tested.png)
 
 ---
 
@@ -84,6 +84,6 @@ STEP 5 Enable PHP on the website
 
 `sudo chmod 775 index.php`
 
-![php index](./Image/php_index_server.png)
+![php index](./Images/php_index_server.png)
 
 [inline link](http://3.91.233.98)
